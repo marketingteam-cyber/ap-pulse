@@ -1,0 +1,34 @@
+{
+  "zones": {
+    "entrance": { "traffic": 95, "peakHours": ["08:00-09:30", "17:00-18:30"] },
+    "lobby": { "traffic": 88, "peakHours": ["08:00-09:30", "12:00-13:00", "17:00-18:30"] },
+    "reception": { "traffic": 72, "peakHours": ["09:00-11:00", "14:00-16:00"] },
+    "hallway_main": { "traffic": 92, "peakHours": ["08:30-09:30", "12:00-13:00", "17:00-18:00"] },
+    "hallway_left": { "traffic": 65, "peakHours": ["09:00-10:00", "14:00-15:00"] },
+    "hallway_right": { "traffic": 70, "peakHours": ["09:00-10:00", "14:00-16:00"] },
+    "conf_a": { "traffic": 55, "peakHours": ["10:00-12:00", "14:00-16:00"] },
+    "conf_b": { "traffic": 60, "peakHours": ["09:00-12:00", "14:00-16:00"] },
+    "conf_c": { "traffic": 40, "peakHours": ["11:00-12:00", "16:00-17:00"] },
+    "open_office": { "traffic": 85, "peakHours": ["09:00-12:00", "13:00-17:00"] },
+    "hallway_upper": { "traffic": 58, "peakHours": ["09:00-10:00", "12:00-13:00"] },
+    "kitchen": { "traffic": 78, "peakHours": ["08:00-09:00", "12:00-13:30", "15:00-15:30"] },
+    "break_room": { "traffic": 50, "peakHours": ["12:00-13:00", "15:00-16:00"] },
+    "hr_office": { "traffic": 30, "peakHours": ["10:00-12:00", "14:00-16:00"] },
+    "ceo_office": { "traffic": 15, "peakHours": ["09:00-10:00"] },
+    "server_room": { "traffic": 10, "peakHours": ["10:00-11:00"] },
+    "restrooms": { "traffic": 68, "peakHours": ["10:00-10:30", "12:00-13:00", "15:00-15:30"] },
+    "meeting_pod_1": { "traffic": 45, "peakHours": ["10:00-11:00", "14:00-15:00"] },
+    "meeting_pod_2": { "traffic": 42, "peakHours": ["09:00-10:00", "11:00-12:00"] },
+    "storage": { "traffic": 8, "peakHours": ["09:00-09:30"] }
+  },
+  "mostUsedPaths": [
+    { "from": "entrance", "to": "open_office", "usage": 340, "avgTime": "2.5 min" },
+    { "from": "open_office", "to": "kitchen", "usage": 280, "avgTime": "1.8 min" },
+    { "from": "lobby", "to": "conf_a", "usage": 210, "avgTime": "1.5 min" },
+    { "from": "entrance", "to": "kitchen", "usage": 190, "avgTime": "3.2 min" },
+    { "from": "open_office", "to": "conf_b", "usage": 175, "avgTime": "1.2 min" },
+    { "from": "hallway_main", "to": "restrooms", "usage": 165, "avgTime": "1.8 min" },
+    { "from": "entrance", "to": "ceo_office", "usage": 85, "avgTime": "3.8 min" },
+    { "from": "open_office", "to": "break_room", "usage": 150, "avgTime": "2.0 min" }
+  ]
+}

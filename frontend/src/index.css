@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+/* React Flow custom styles */
+.react-flow__node {
+  font-family: 'Inter', sans-serif;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+}
+
+.react-flow__controls {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.react-flow__controls-button {
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.react-flow__controls-button:hover {
+  background: #f1f5f9;
+}
+
+.react-flow__minimap {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+/* Path animation */
+@keyframes dashOffset {
+  0% { stroke-dashoffset: 20; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.animated-path {
+  animation: dashOffset 0.6s linear infinite;
+}
+
+/* Heatmap glow */
+@keyframes heatPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+.heat-pulse {
+  animation: heatPulse 2s ease-in-out infinite;
+}
+
+/* Toast animation */
+@keyframes toastIn {
+  0% { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.toast-enter {
+  animation: toastIn 0.3s ease-out;
+}

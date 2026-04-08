@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ad1",
+    "zone": "lobby",
+    "position": { "x": 400, "y": 540 },
+    "size": { "width": 200, "height": 60 },
+    "content": {
+      "title": "New Health Benefits",
+      "description": "Open enrollment starts next week. Check the HR portal for details.",
+      "type": "internal",
+      "cta": "Learn More"
+    },
+    "impressions": 1240,
+    "clicks": 89
+  },
+  {
+    "id": "ad2",
+    "zone": "kitchen",
+    "position": { "x": 200, "y": 160 },
+    "size": { "width": 180, "height": 50 },
+    "content": {
+      "title": "Friday Lunch Special",
+      "description": "Catered lunch this Friday - Mediterranean cuisine!",
+      "type": "internal",
+      "cta": "RSVP Now"
+    },
+    "impressions": 890,
+    "clicks": 156
+  },
+  {
+    "id": "ad3",
+    "zone": "open_office",
+    "position": { "x": 500, "y": 320 },
+    "size": { "width": 200, "height": 60 },
+    "content": {
+      "title": "AWS Cloud Training",
+      "description": "Free AWS certification prep - sign up by EOW",
+      "type": "sponsor",
+      "cta": "Register"
+    },
+    "impressions": 2100,
+    "clicks": 312
+  },
+  {
+    "id": "ad4",
+    "zone": "hallway_main",
+    "position": { "x": 400, "y": 420 },
+    "size": { "width": 180, "height": 50 },
+    "content": {
+      "title": "Team Outing Next Month",
+      "description": "Vote for your preferred activity on Slack #social",
+      "type": "internal",
+      "cta": "Vote Now"
+    },
+    "impressions": 3400,
+    "clicks": 445
+  }
+]
