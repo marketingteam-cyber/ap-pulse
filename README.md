@@ -55,13 +55,26 @@ npm run dev
 
 The frontend dev server proxies `/api/*` requests to the backend on port 3001.
 
-### Production build
+### Production build (local)
 
 ```bash
 cd frontend && npm run build
 # Serve via backend: cd ../backend && npm start
 # → http://localhost:3001
 ```
+
+### Deploy to Vercel
+
+1. Install Vercel CLI: `npm i -g vercel`
+2. From the project root, run:
+
+```bash
+vercel
+```
+
+3. Vercel auto-detects the Vite framework, builds `frontend/`, and deploys the `api/` directory as serverless functions.
+
+Alternatively, connect the GitHub repo at [vercel.com/new](https://vercel.com/new) — it deploys automatically on every push.
 
 ## API Endpoints
 
@@ -80,22 +93,29 @@ cd frontend && npm run build
 
 ```
 ap-pulse/
-├── backend/
-│   ├── server.js          # Express server + Dijkstra
-│   └── data/              # Mock JSON data
-│       ├── graph.json     # Office graph (nodes + weighted edges)
-│       ├── rooms.json     # Room details and schedules
-│       ├── people.json    # Employee directory
-│       ├── heatmap.json   # Traffic analytics
-│       └── ads.json       # Ad placement zones
-├── frontend/
+├── api/                     # Vercel serverless functions
+│   ├── _data/               # Shared JSON data
+│   ├── _lib/dijkstra.js     # Pathfinding algorithm
+│   ├── shortest-path.js     # POST /api/shortest-path
+│   ├── graph.js             # GET  /api/graph
+│   ├── rooms/index.js       # GET  /api/rooms
+│   ├── rooms/[id].js        # GET  /api/rooms/:id
+│   ├── search.js            # GET  /api/search
+│   ├── people.js            # GET  /api/people
+│   ├── heatmap.js           # GET  /api/heatmap
+│   └── ads.js               # GET  /api/ads
+├── backend/                 # Express server (local dev)
+│   ├── server.js
+│   └── data/
+├── frontend/                # Vite + React + Tailwind
 │   ├── src/
-│   │   ├── App.jsx        # Main application shell
-│   │   ├── components/    # React components
-│   │   ├── utils/         # API helpers
-│   │   └── data/          # Frontend mock data
+│   │   ├── App.jsx
+│   │   ├── components/
+│   │   ├── utils/
+│   │   └── data/
 │   ├── tailwind.config.js
 │   └── vite.config.js
+├── vercel.json              # Vercel deployment config
 └── README.md
 ```
 

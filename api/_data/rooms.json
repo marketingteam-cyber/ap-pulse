@@ -1,0 +1,155 @@
+[
+  {
+    "id": "conf_a",
+    "name": "Conference Room A",
+    "capacity": 12,
+    "status": "available",
+    "amenities": ["Projector", "Whiteboard", "Video Conferencing"],
+    "floor": 1,
+    "schedule": [
+      { "time": "09:00 - 10:00", "title": "Team Standup", "booked_by": "Engineering", "status": "completed" },
+      { "time": "10:30 - 11:30", "title": "Design Review", "booked_by": "Product", "status": "upcoming" },
+      { "time": "14:00 - 15:00", "title": "Sprint Planning", "booked_by": "Engineering", "status": "upcoming" }
+    ]
+  },
+  {
+    "id": "conf_b",
+    "name": "Conference Room B",
+    "capacity": 8,
+    "status": "booked",
+    "amenities": ["Whiteboard", "TV Display"],
+    "floor": 1,
+    "schedule": [
+      { "time": "09:00 - 12:00", "title": "Workshop: Q2 Strategy", "booked_by": "Leadership", "status": "in_progress" },
+      { "time": "13:00 - 14:00", "title": "1:1 Sync", "booked_by": "HR", "status": "upcoming" },
+      { "time": "15:00 - 16:00", "title": "Client Call", "booked_by": "Sales", "status": "upcoming" }
+    ]
+  },
+  {
+    "id": "conf_c",
+    "name": "Conference Room C",
+    "capacity": 20,
+    "status": "available",
+    "amenities": ["Projector", "Whiteboard", "Video Conferencing", "Surround Sound"],
+    "floor": 1,
+    "schedule": [
+      { "time": "11:00 - 12:00", "title": "All Hands Meeting", "booked_by": "CEO", "status": "upcoming" },
+      { "time": "16:00 - 17:00", "title": "Retrospective", "booked_by": "Engineering", "status": "upcoming" }
+    ]
+  },
+  {
+    "id": "open_office",
+    "name": "Open Office Area",
+    "capacity": 50,
+    "status": "available",
+    "amenities": ["Standing Desks", "Power Outlets", "Wi-Fi"],
+    "floor": 1,
+    "schedule": []
+  },
+  {
+    "id": "kitchen",
+    "name": "Kitchen",
+    "capacity": 15,
+    "status": "available",
+    "amenities": ["Coffee Machine", "Microwave", "Refrigerator", "Water Dispenser"],
+    "floor": 1,
+    "schedule": [
+      { "time": "12:00 - 13:00", "title": "Lunch Hour (Peak)", "booked_by": "Facilities", "status": "upcoming" }
+    ]
+  },
+  {
+    "id": "break_room",
+    "name": "Break Room",
+    "capacity": 10,
+    "status": "available",
+    "amenities": ["Couch", "TV", "Snack Bar", "Games"],
+    "floor": 1,
+    "schedule": []
+  },
+  {
+    "id": "hr_office",
+    "name": "HR Office",
+    "capacity": 4,
+    "status": "booked",
+    "amenities": ["Printer", "Filing Cabinet"],
+    "floor": 1,
+    "schedule": [
+      { "time": "09:00 - 17:00", "title": "HR Operations", "booked_by": "HR", "status": "in_progress" }
+    ]
+  },
+  {
+    "id": "ceo_office",
+    "name": "CEO Office",
+    "capacity": 4,
+    "status": "booked",
+    "amenities": ["Video Conferencing", "Whiteboard", "Private Phone"],
+    "floor": 1,
+    "schedule": [
+      { "time": "09:00 - 17:00", "title": "Executive Suite", "booked_by": "CEO", "status": "in_progress" }
+    ]
+  },
+  {
+    "id": "server_room",
+    "name": "Server Room",
+    "capacity": 2,
+    "status": "available",
+    "amenities": ["Server Racks", "UPS", "Cooling System"],
+    "floor": 1,
+    "schedule": [
+      { "time": "22:00 - 02:00", "title": "Maintenance Window", "booked_by": "IT", "status": "upcoming" }
+    ]
+  },
+  {
+    "id": "meeting_pod_1",
+    "name": "Meeting Pod 1",
+    "capacity": 4,
+    "status": "available",
+    "amenities": ["Display", "Soundproofing"],
+    "floor": 1,
+    "schedule": [
+      { "time": "10:00 - 10:30", "title": "Quick Sync", "booked_by": "Design", "status": "upcoming" },
+      { "time": "14:00 - 14:30", "title": "Interview", "booked_by": "HR", "status": "upcoming" }
+    ]
+  },
+  {
+    "id": "meeting_pod_2",
+    "name": "Meeting Pod 2",
+    "capacity": 4,
+    "status": "booked",
+    "amenities": ["Display", "Soundproofing"],
+    "floor": 1,
+    "schedule": [
+      { "time": "09:00 - 09:30", "title": "Daily Standup", "booked_by": "Frontend Team", "status": "in_progress" },
+      { "time": "11:00 - 11:30", "title": "Code Review", "booked_by": "Engineering", "status": "upcoming" }
+    ]
+  },
+  {
+    "id": "reception",
+    "name": "Reception Desk",
+    "capacity": 3,
+    "status": "booked",
+    "amenities": ["Visitor Log", "Badge Printer"],
+    "floor": 1,
+    "schedule": [
+      { "time": "08:00 - 18:00", "title": "Front Desk Operations", "booked_by": "Admin", "status": "in_progress" }
+    ]
+  },
+  {
+    "id": "restrooms",
+    "name": "Restrooms",
+    "capacity": 8,
+    "status": "available",
+    "amenities": [],
+    "floor": 1,
+    "schedule": []
+  },
+  {
+    "id": "storage",
+    "name": "Storage Room",
+    "capacity": 2,
+    "status": "available",
+    "amenities": ["Shelving", "Supplies"],
+    "floor": 1,
+    "schedule": []
+  }
+]
